@@ -39,8 +39,6 @@ body{
 	font-size: 20px;
 }
 
-
-
 a {
 	display: inline-block;
 	width: 200px;
@@ -128,7 +126,6 @@ a:active {
 .container {
 	width: 90%;
 	margin: 0 auto;
-	
 }
 
 .maintop {}
@@ -172,8 +169,7 @@ a:active {
 }
 .column {
 	text-align: center;
-	margin: 15px 0;
-	border: 1px solid #000;
+	margin: 15px;
 }
 
 .column p {
@@ -212,22 +208,30 @@ a:active {
 	font-size: 11px;
 }
 
-
-
-@media only screen and (min-width: 881px) and (max-width: 1250px) {
+@media only screen and (min-width: 1025px) and (max-width: 1240px) {
 	.mainbodyrow1__columns,
 	.mainbodyrow2__columns {
-	display: flex;
-	flex-wrap: wrap;	
-	}
-}
-
-
-@media only screen and (min-width: 400px) and (max-width: 880px) {
-	.mainbodyrow1__columns,
-	.mainbodyrow2__columns {
-	display: flex;
-	flex-wrap:nowrap;
-	flex-direction: column;
+		display: flex;
+		justify-content:center;
+		flex-wrap: wrap;
 	}	
+	.column p,
+	a {
+		width: 300px;
+		font-size: 30px;
+	}
+	
+}
+@media only screen and (min-width: 50px) and (max-width: 1024px) {
+	.mainbodyrow1__columns,
+	.mainbodyrow2__columns {
+		display: flex;
+		flex-wrap:nowrap;
+		flex-direction: column;
+	}
+	.column p,
+	a {
+		width: 400px;
+		font-size: 40px;
+	}
 }
