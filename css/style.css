@@ -208,7 +208,7 @@ a:active {
 	font-size: 11px;
 }
 
-@media only screen and (min-width: 1025px) and (max-width: 1240px) {
+@media only screen and (min-width: 981px) and (max-width: 1240px) {
 	.mainbodyrow1__columns,
 	.mainbodyrow2__columns {
 		display: flex;
@@ -227,7 +227,7 @@ a:active {
 	}
 	
 }
-@media only screen and (min-width: 50px) and (max-width: 1024px) {
+@media (max-width:980px) {
 	.mainbodyrow1__columns,
 	.mainbodyrow2__columns {
 		display: flex;
