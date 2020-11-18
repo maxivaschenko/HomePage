@@ -208,7 +208,7 @@ a:active {
 	font-size: 11px;
 }
 
-@media only screen and (min-width: 981px) and (max-width: 1240px) {
+@media only screen and (min-width: 881px) and (max-width: 1240px) {
 	.mainbodyrow1__columns,
 	.mainbodyrow2__columns {
 		display: flex;
@@ -226,22 +226,4 @@ a:active {
 		height: 45px;
 	}
 	
-}
-@media (max-width:980px) {
-	.mainbodyrow1__columns,
-	.mainbodyrow2__columns {
-		display: flex;
-		flex-direction: column;
-	}
-	.column p,
-	a {
-		width: 400px;
-		font-size: 40px;
-	}
-	.back__to__top {
-		right: 5%;
-		bottom: 5%;
-		width: 55px;
-		height: 55px;
-	}
 }
