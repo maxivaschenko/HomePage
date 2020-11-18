@@ -1,0 +1,229 @@
+*{padding: 0;margin: 0;border: 0;}
+*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding:0;border:0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
+
+
+::-webkit-scrollbar {
+  width: 6px; 
+   background-color: rgba(0,0,0,0);
+  -webkit-border-radius: 80px;
+}
+::-webkit-scrollbar:hover {
+  background-color: rgba(0, 0, 0, 0.09);
+}
+
+::-webkit-scrollbar-thumb:vertical {
+  background: rgba(0,0,0,0.61);
+  -webkit-border-radius: 80px;
+}
+::-webkit-scrollbar-thumb:vertical:active {
+  background: rgba(0,0,0,0.61);
+  -webkit-border-radius: 80px;
+}
+
+body{
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	background: #0b76cc;
+	font-size: 20px;
+}
+
+a {
+	display: inline-block;
+	width: 200px;
+	margin: 5px 10px 5px 10px;
+	text-align: center;
+	padding: 5px;
+	border-radius: 5px;
+	background: #2196f3;
+	color: #ffffff;
+	box-shadow: 1px 1px 7px 0 #000;
+}
+a:hover {
+	background: #0d87e9;
+	box-shadow: 1px 1px 10px 0 #0b76cc;
+	transition: all 0.3s ease;
+}
+a:active {
+	position: relative;
+	left: 1px;
+	top: 1px;
+}
+
+
+.back__to__top{
+	position: fixed;
+	right: 2%;
+	bottom: 5%;
+	width: 35px;
+	height: 35px;
+	border: 2px solid #fff;
+	border-radius: 10px;
+	background: #0b76cc;
+	z-index: 100;
+	display: none;
+}
+
+.back__to__top:hover {
+	transition: all 0.2s ease;
+	box-shadow: 1px 1px 10px 0 #000;
+}
+
+.back__to__top::before, 
+.back__to__top::after {
+	content:'';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);	
+}
+
+.back__to__top::before {
+	width: 4px;
+	height: 15px;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	background-color: #fff;
+}
+.back__to__top::after {
+	width: 12px;
+	height: 12px;
+	transform: translate(-50%, -50%) rotate(45deg);
+	border-top: 3px solid #fff;
+	border-left: 3px solid #fff;
+}
+
+.margintop,
+.marginbotom {
+	height: 3%;
+}
+
+.wrapper {
+	width: 90%;
+	min-height: 94%;
+	display: flex;
+	flex-direction: column;
+	background: #e8e8e8;
+	margin: 0 auto;
+	border-radius: 30px;
+	box-shadow: 1px 1px 27px 0 #000;
+}
+.contentmain {
+	flex: 1 1 auto;
+}
+
+.container {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.maintop {}
+.maintop__row {
+	display: flex;
+	height: 100px;
+	justify-content: center;
+	align-items: center;
+	font-weight: bold;
+	font-size: 45px;
+	color: #505353;
+	
+}
+
+
+.navmenu {}
+.navmenu__row {
+	text-align: center;
+}
+.navmenu_ul {
+}
+
+.navmenu_ul li{
+	display: inline-block;
+}
+
+.mainbodyrow1 {}
+
+.mainbodyrow1__row,
+.mainbodyrow2__row {
+	margin: 0 0 20px 0;
+	border: 1px solid #505353;
+	border-radius: 15px;
+	box-shadow: 1px 1px 7px 0 #000;
+}
+
+.mainbodyrow1__columns,
+.mainbodyrow2__columns {
+	display:flex;
+		justify-content:space-around;
+}
+.column {
+	text-align: center;
+	margin: 15px;
+}
+
+.column p {
+	display: inline-block;
+	background: #505353;	
+	color: #ffffff;
+	width: 200px;
+	margin: 5px 10px 5px 10px;
+	padding: 5px;
+	border-radius: 5px;
+	box-shadow: 1px 1px 7px 0 #000;
+}
+
+.column1 {}
+.column2 {}
+.column3 {}
+.column4 {}
+
+
+.mainbodyrow2 {
+}
+
+.mainbodyrow2__row {
+}
+
+.footer {}
+.footer__row {
+	display: flex;
+	height: 60px;
+	justify-content: center;
+	align-items: center;
+}
+.footer__text {
+	text-align: center;
+	line-height: 20px;
+	font-size: 11px;
+}
+
+@media only screen and (min-width: 881px) and (max-width: 1240px) {
+	.mainbodyrow1__columns,
+	.mainbodyrow2__columns {
+		display: flex;
+		flex-wrap: wrap;
+	}	
+	.column p,
+	a {
+		width: 300px;
+		font-size: 30px;
+	}
+	.back__to__top {
+		right: 5%;
+		bottom: 4%;
+		width: 45px;
+		height: 45px;
+	}
+	
+}
