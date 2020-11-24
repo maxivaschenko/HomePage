@@ -137,10 +137,11 @@ a:active {
 	font-weight: bold;
 	font-size: 45px;
 	color: #505353;
-	
 }
 
-
+.maintop__rowtext {
+	text-align: center;
+}
 .navmenu {}
 .navmenu__row {
 	text-align: center;
