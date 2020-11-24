@@ -227,3 +227,10 @@ a:active {
 	}
 }
 
+@media (max-width: 767px) {
+	.mainbodyrow1__columns,
+	.mainbodyrow2__columns {
+		display: flex;
+		flex-direction:column;	
+	}	
+}
